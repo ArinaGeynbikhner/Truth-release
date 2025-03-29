@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="model.js"></script>
+  
+  <script src="shifr.js"></script>
+  <script src="map.js"></script>
+  <script src="audio.js"></script>
+  <script src="equaliser.js"></script>
+  <script src="timerSection.js"></script>
+  <script src="numberupdate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <link rel="stylesheet" href="media.css" />
+
+</head>
+<body>
+ 
+    <section class="my_common_screen block">
+        <div class="text_block_1">THE GREAT ARCHEOLOGICAL MYSTERY <br> OF THE 21TH CENTURY</div>
+        <div class="img_container">
+            <div class="black-hole"></div>
+            <div id="block_2" class="text_block_2 draggable">
+                <img src="images/text_block_2.png" alt="">
+            </div>
+            <div id="block_3" class="text_block_3 draggable">
+                <img src="images/text_block_3.png" alt="">
+            </div>
+        </div>
+        <div class="model_case_3d"><img src="images/Group 37.png" alt=""></div>
+        <div class="model_case_3d_hole"><img src="images/Group 38.png" alt=""></div>
+        <div class="phone"><img src="images/phone.svg" alt=""></div>
+        <div class="texture-overlay"></div>
+    </section>
+
+  <section class="section2 hidden" id="section2">
+      <div id="three-canvas"></div> 
+      <div class="question1">Brush off the dust of ages from the mysterious <br>
+        artifacts and fossils of the Great Flow era. <br><br>
+        Want to know more?</div>
+      <div class="yes2"> YES </div>
+      <div class="no2"> NO </div>
+      <div class="texture-overlay"></div>
+  </section>
+
+  <section class="nextSection hidden">
+      <div class="container">
+          <div class="question1">Cutting-edge expertise in decoding the Ninth Flow script <br>
+            Uncover the secrets of the Canon of Symbiotic Existence. <br><br>
+            Intrigued?</div>
+            <div class="yes3"> YES </div>
+            <div class="no3"> NO </div>
+          <div class="head_case2">
+              <img src="images/head.png" alt="">
+          </div>
+          <div class="text-block">
+              During archaeological <br> excavations in Tunnel <br> 3-80-7, discovered deep <br> within the former office <br> complex of the General <br> Agency for Inertnobesafety <br> Assimilation, an unusual <br> face cast was found, made <br> from an unidentified <br> material. The remains were <br> found about 3 meters off <br> the ground in one of the <br> darkened corridors, <br> suggesting the object <br> was placed in the wall <br> for long-term observation.
+          </div>
+          <div class="text-block2">
+              The cast, judging <br> by its expression, <br> was left at a mo- <br> ment of extreme <br> psychological <br> influence - <br> perhaps this man <br> was caught in the <br> radio waves <br> emitted by the <br> worm Luminaria, <br> or he found him- <br> self in the zone <br> of some psychoac- <br> tive influence <br> that left him <br> no chance <br> of resistance
+          </div>
+          <div class="text-block3">
+              Looking at this face,<br> one can assume that it<br> expresses not just the<br> emotions of one person,<br> but is a symbol of the<br> suffering that all of<br> Luminaria's <br>"subordinates" endured
+          </div>
+          <div class="text-block-top">Scan of a pet- <br>rified face found <br>in tunnel 3-80-7
+          </div>
+          <div class="Y2">x</div>
+          <div class="X">y</div>
+          <div class="texture-overlay"></div>
+          <!-- <div class="back" id="backButton">
+              <img src="images/arrow.svg" alt="Back">
+          </div> -->
+      </div>
+  </section>
+
+  <section class="finalSection hidden">
+    <div class="question1">Discovery of new tunnels and cities of the Ninth Flow <br>
+      with incredible new echolocation systems. <br><br>
+      Want to hear more?</div>
+      <div class="container2">
+          <div class="center"><img src="images/center.svg" alt=""></div>
+          <div class="tunnel1-6-08"><img src="images/1-6-08.svg" alt=""></div>
+          <div class="tunnel1-9-07"><img src="images/1-9-07.svg" alt=""></div>
+          <div class="tunnel1-10-06"><img src="images/1-10-06.svg" alt=""></div>
+          <div class="tunnel2-3-01"><img src="images/2-3-01.svg" alt=""></div>
+          <div class="tunnel2-5-06"><img src="images/2-5-06.svg" alt=""></div>
+          <div class="tunnel2-8-10"><img src="images/2-8-10.svg" alt=""></div>
+          <div class="tunnel3-1-02"><img src="images/3-1-02.svg" alt=""></div>
+          <div class="tunnel3-3-06"><img src="images/3-3-06.svg" alt=""></div>
+          <div class="tunnel3-6-08"><img src="images/3-6-08.svg" alt=""></div>
+          <div class="tunnel3-9-10"><img src="images/3-9-10.svg" alt=""></div>
+          <div class="tunnel4-2-03"><img src="images/4-2-03.svg" alt=""></div>
+          <div class="tunnel4-5-07"><img src="images/4-5-07.svg" alt=""></div>
+          <div class="tunnel5-2-03"><img src="images/5-2-03.svg" alt=""></div>
+          <div class="tunnel5-6-08"><img src="images/5-6-08.svg" alt=""></div>
+          <div class="tunnel5-7-10"><img src="images/5-7-10.svg" alt=""></div>
+          <div class="tunnel6-6-03"><img src="images/6-6-03.svg" alt=""></div>
+          <div class="tunnel6-9-09"><img src="images/6-9-09.svg" alt=""></div>
+          <div class="tunnel6-10-10"><img src="images/6-10-10.svg" alt=""></div>
+          <div class="tunnel7-1-02"><img src="images/7-1-02.svg" alt=""></div>
+          <div class="tunnel7-3-10"><img src="images/7-3-10.svg" alt=""></div>
+          <div class="tunnel7-6-10"><img src="images/7-6-10.svg" alt=""></div>
+          <div class="tunnel8-6-10"><img src="images/8-6-10.svg" alt=""></div>
+          <div class="building1"><img src="images/1.png" alt=""></div>
+          <div class="building2"><img src="images/2.png" alt=""></div>
+          <div class="building3"><img src="images/3.png" alt=""></div>
+          <div class="building4"><img src="images/4.png" alt=""></div>
+          <div class="building5"><img src="images/5.png" alt=""></div>
+          <div class="building6"><img src="images/6.png" alt=""></div>
+          <div class="building7"><img src="images/7.png" alt=""></div>
+          <div class="building8"><img src="images/8.png" alt=""></div>
+          <div class="building9"><img src="images/9.png" alt=""></div>
+          <div class="building24"><img src="images/24.png" alt=""></div>
+          <div class="building10"><img src="images/10.png" alt=""></div>
+          <div class="building11"><img src="images/11.png" alt=""></div>
+          <div class="building12"><img src="images/12.png" alt=""></div>
+          <div class="building13"><img src="images/13.png" alt=""></div>
+          <div class="building14"><img src="images/14.png" alt=""></div>
+          <div class="building15"><img src="images/15.png" alt=""></div>
+          <div class="building16"><img src="images/16.png" alt=""></div>
+          <div class="building17"><img src="images/17.png" alt=""></div>
+          <div class="building18"><img src="images/18.png" alt=""></div>
+          <div class="building19"><img src="images/19.png" alt=""></div>
+          <div class="building20"><img src="images/20.png" alt=""></div>
+          <div class="building21"><img src="images/21.png" alt=""></div>
+          <div class="building22"><img src="images/22.png" alt=""></div>
+          <div class="building23"><img src="images/23.png" alt=""></div>
+          <div class="yes4"> YES </div>
+          <div class="no4"> NO </div>
+          <div class="texture-overlay"></div>
+      </div>
+
+  </section>
+
+  <section class="echolocationSection hidden">
+      <div class="container3">
+        <div class="question1">The key to all answers is right before you. <br>
+          The journey begins with a single step <br><br>
+          Want to visit the release of the truth?</div>
+          <div class="tunnels"><img src="images/tunnels.svg" alt=""></div>   
+          <div class="circle1">
+              <img src="images/circle.svg" alt="">
+              <svg class="equalizer" viewBox="0 0 100 100">
+                  <g class="dots"></g>
+              </svg>
+          </div>
+          <div class="circle2">
+              <img src="images/circle.svg" alt="">
+              <svg class="equalizer" viewBox="0 0 100 100">
+                  <g class="dots"></g>
+              </svg>
+          </div>
+          <div class="circle3">
+              <img src="images/circle.svg" alt="">
+              <svg class="equalizer" viewBox="0 0 100 100">
+                  <g class="dots"></g>
+              </svg>
+          </div>
+          <div class="circle4">
+              <img src="images/circle.svg" alt="">
+              <svg class="equalizer" viewBox="0 0 100 100">
+                  <g class="dots"></g>
+              </svg>
+          </div>
+          <div class="building25"><img src="images/25.png" alt=""></div>
+          <div class="texture-overlay"></div> 
+      </div>
+      <div class="yes5"> YES </div>
+          <div class="no5"> NO </div>
+  </section> 
+
+  <section class="timerSection" id="timerSection">
+      <div class="text-block-wait">wait for the truth</div>
+      <div class="text-block-wait2">wait for the truth</div>
+      <div class="text-block-patient">be more patient</div>
+      <div class="number">12</div>
+      <div class="number2">12</div>
+      <div class="number3">60</div>
+      <div class="timer_circle_left"><img src="images/timer_circle_left.png" alt=""></div>
+      <div class="timer_circle_middle"><img src="images/timer_circle_middle.png" alt=""></div>
+      <div class="timer_circle_right"><img src="images/timer_circle_right2.png" alt=""></div>
+      <div class="numbers_middle"><img src="images/timernumber2.png" alt=""></div>
+      <div class="numbers_left"><img src="images/timernumber4.png" alt=""></div>
+      <div class="numbers_right"><img src="images/timernumber3.png" alt=""></div>
+      <div class="texture-overlay"></div>
+  </section>
+ 
+
+  <!-- ленивая загрузка тяжелого script.js -->
+  <script>
+    function loadScript(src) {
+      return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.async = true;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+      });
+    }
+
+    window.scriptPaused = false;
+    window.pauseScript = function() {
+      window.scriptPaused = true;
+      console.log('Script paused');
+    };
+    window.resumeScript = function() {
+      if (window.scriptPaused) {
+        window.scriptPaused = false;
+        console.log('Script resumed');
+        if (typeof animate === 'function') {
+          animate();
+        }
+      }
+    };
+
+    (function() {
+      const originalRAF = window.requestAnimationFrame;
+      window.requestAnimationFrame = function(callback) {
+        if (window.scriptPaused) {
+          return; 
+        }
+        return originalRAF(callback);
+      };
+    })();
+
+    const section2Element = document.getElementById('section2');
+    const loadObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          loadScript('script.js')
+            .then(() => {
+              console.log('script.js loaded.');
+              const visibilityObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                    window.resumeScript();
+                  } else {
+                    window.pauseScript();
+                  }
+                });
+              }, { threshold: 0.1 });
+              visibilityObserver.observe(section2Element);
+            })
+            .catch((err) => {
+              console.error('Failed to load script.js:', err);
+            });
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.1 });
+
+    if (section2Element) {
+      loadObserver.observe(section2Element);
+    }
+  </script>
+<script src="console.js"></script>
+
+</body>
+</html>
