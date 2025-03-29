@@ -18,7 +18,7 @@ body {
     }
     .phone {
         position: absolute;
-        bottom: 2vw;
+        bottom: 3vw;
         left: 50%;
         transform: translateX(-50%);
         width: 7vw;
