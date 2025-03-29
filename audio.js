@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // воспроизведение звука при клике
     function playAudio(circleClass) {
         if (audioFiles[circleClass]) {
-            audioFiles[circleClass].volume = 0.4;
+            audioFiles[circleClass].volume = 0.2;
             audioFiles[circleClass].play().catch(error => {
                 console.error(`Ошибка воспроизведения для ${circleClass}:`, error);
             });
