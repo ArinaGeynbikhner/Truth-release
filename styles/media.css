@@ -676,5 +676,220 @@
             top: 50%;
             margin-top: 75%;
             z-index: 1100;    
+}}
+
+@media (min-width: 768px) and (max-width: 1440px) and (orientation: portrait) {
+    /* cтили для планшетов в портретной ориентации */
+.center {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
 }
+
+.tunnel1-6-08 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel1-9-07 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel1-10-06 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel2-3-01 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel2-5-06 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel2-8-10 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel3-1-02 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel3-3-06 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel3-6-08 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel3-9-10 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel4-2-03 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel4-5-07 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel5-2-03 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel5-6-08 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel5-7-10 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel6-6-03 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel6-9-09 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel6-10-10 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel7-1-02 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg); 
+}
+
+.tunnel7-3-10 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel7-6-10 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+
+.tunnel8-6-10 {
+    transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+}
+.building1, .building2, .building3, .building4, .building5, .building6, .building7, .building8, .building9, .building10, 
+    .building11, .building12,.building13, .building14, .building15, .building16, .building17, .building18, .building19, 
+    .building20, .building21, .building22, .building23, .building24  {
+        transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+    }
+    .building25 {
+        transform: translate(-50%, -50%) scale(2) rotate(-90deg);
+    }
+    .tunnels {
+        transform: translate(-50%, -50%) scale(2) rotate(-90deg); 
+    }
+    .circle1 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 3.5vw; 
+        height: auto;
+        margin-top: -14%; 
+        margin-left: 10%;
+        z-index: 99999;
+    }
+    
+    .circle2 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 3.5vw;
+        height: auto;
+        margin-top: 3%;
+        margin-left: 11%; 
+        z-index: 99999;
+    }
+      
+    .circle3 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 3.5vw; 
+        height: auto;
+        margin-top: 13%; 
+        margin-left: 1%; 
+        z-index: 99999;
+    }
+    
+    .circle4 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 3.5vw;
+        height: auto;
+        margin-top: -19%; 
+        margin-left: -15%; 
+        z-index: 99999;
+    }
+    .text-block-wait {
+        font-size: 2vw;
+        right: -40%;
+        margin-top: -63%;
+        margin-right: 3%;
+        }
+
+        .text-block-wait2 {
+        font-size: 2vw;
+        margin-top: -63%;
+        margin-left: -2%;
+        }
+
+        .text-block-patient {
+            font-size: 2vw;
+            width: 60%;
+            text-align: left;
+            position: absolute;
+            left: 50%;
+            margin-top: -63%;
+            margin-left: 21.5%;
+        }  
+
+        .number {
+        font-size: 2vw;
+        color: #ffffff;
+        width: 60%;
+        text-align: left;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        margin-top: 60%;
+        z-index: 1100;          
+        }
+
+        .number2 {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 2vw;
+        color: #ffffff;
+        width: 60%;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        margin-top: 60%;
+        z-index: 1100;
+        }
+
+        .number3 {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 2vw;
+        color: #ffffff;
+        width: 60%;
+        text-align: right;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        margin-top: 60%;
+        z-index: 1100;    
+}}
 
