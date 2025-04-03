@@ -6,7 +6,7 @@
   }
 } 
 
-/* /* иконка в горизонтальной ориентации или на 1024px */
+/* иконка в горизонтальной ориентации или на 1024px */
 @media (max-width: 768px) and (orientation: landscape),
        (min-width: 768px) and (max-width: 1024px) and (orientation: landscape),
        (min-width: 1025px) {
